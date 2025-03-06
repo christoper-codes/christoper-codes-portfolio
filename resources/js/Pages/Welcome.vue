@@ -1,6 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import ChristoperImg from '../../../public/assets/img/christoper.png'
+import ChristoperImg from '../../../public/assets/img/christoper-hd.png'
 import TypeIt from "typeit";
 import { onMounted, ref } from 'vue';
 import Menu from '@/Components/Menu.vue';
@@ -46,7 +46,7 @@ setTimeout(() => {
         </Transition>
 
         <div class="min-h-full w-full lg:max-w-[80%] flex items-center mx-auto">
-            <div class="z-10 relative font-bold text-6xl px-5 lg:px-0 leading-[70px] lg:text-9xl lg:leading-[145px] 2xl:text-[150px] 2xl:leading-[170px]">
+            <div class="z-10 relative font-bold text-6xl px-5 md:px-20 lg:px-0 leading-[70px] md:text-8xl lg:text-9xl lg:leading-[145px] 2xl:text-[150px] 2xl:leading-[170px]">
                 <span class="block">Hello</span>
                 <span class="block">It's</span>
                 <span id="animatedText" class="block text-red-600"></span>
@@ -77,11 +77,20 @@ setTimeout(() => {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    .image-overlay::after {
+        box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
+        -webkit-box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
+        -moz-box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
+    }
+}
+
+@media (max-width: 450px) {
     .image-overlay::after {
         box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.80) inset;
         -webkit-box-shadow: 200px 37px 113px 106px rgba(0,0,0,0.80) inset;
         -moz-box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.80) inset;
     }
 }
+
 </style>

@@ -18,7 +18,7 @@ onMounted(() => {
     <!-- About -->
     <transition name="fade" mode="out-in">
         <section v-if="TransitionState" id="about" class="w-full relative overflow-hidden">
-            <div class="min-h-full px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
+            <div class="min-h-full px-5 md:px-20 lg:px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
                 <div class="w-full">
                     <h2 class="font-bold text-3xl lg:text-5xl text-gray-700">
                         Let's talk

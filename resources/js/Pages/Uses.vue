@@ -19,7 +19,7 @@ onMounted(() => {
     <!-- About -->
     <transition name="fade" mode="out-in">
         <section v-if="TransitionState" id="about" class="w-full relative overflow-hidden">
-            <div class="min-h-full px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
+            <div class="min-h-full px-5 md:px-20 lg:px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
                 <div class="w-full">
                     <h2 class="font-bold text-3xl lg:text-5xl text-gray-700">
                         Uses<br>
@@ -33,9 +33,9 @@ onMounted(() => {
                     </div>
                     <div class="mt-16 flex items-center justify-center">
                         <div class="relative">
-                            <div class="absolute scale-105 inset-0 w-[70%] rotate-3 bg-gray-200 rounded-lg"></div>
+                            <div class="absolute mx-auto lg:mx-0 scale-105 inset-0 w-[70%] rotate-3 bg-gray-200 rounded-lg"></div>
                             <img
-                                class="relative w-[70%] -rotate-3 h-auto rounded-lg shadow-lg hover:rotate-3 hover:scale-105 cursor-pointer transition-all duration-500 filter grayscale hover:filter-none"
+                                class="mx-auto lg:mx-0 relative w-[70%] -rotate-3 h-auto rounded-lg shadow-lg hover:rotate-3 hover:scale-105 cursor-pointer transition-all duration-500 filter grayscale hover:filter-none"
                                 :src="Desk"
                                 alt="Desk"
                             >
