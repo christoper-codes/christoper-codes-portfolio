@@ -28,7 +28,7 @@ onMounted(() => {
 
                     <div class="mt-9 text-lg flex flex-col gap-10">
                         <p class="leading-8">
-                            These days, my passion is building web applications with<span class="text-red-500 font-semibold"> Laravel, Vue and Tailwind.</span>
+                            Currently, my passion is building web applications with<span class="text-red-500 font-semibold"> Laravel, Livewire, Vue and Tailwind.</span>
                             I'm also deeply interested in data science.
                             I'm based in the beautiful state of Veracruz in Mexico, home of Mexican tequila.
                         </p>

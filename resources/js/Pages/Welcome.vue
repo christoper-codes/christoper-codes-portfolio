@@ -13,7 +13,7 @@ onMounted(() => {
     breakLines: false,
     afterComplete: (instance) => {
       instance
-        .pause(2000)
+        .pause(1000)
         .type("Christoper")
         .pause(2000)
         .delete()
@@ -46,7 +46,7 @@ setTimeout(() => {
         </Transition>
 
         <div class="min-h-full w-full lg:max-w-[80%] flex items-center mx-auto">
-            <div class="z-10 relative font-bold text-6xl px-5 md:px-20 lg:px-0 leading-[70px] md:text-8xl lg:text-9xl lg:leading-[145px] 2xl:text-[150px] 2xl:leading-[170px]">
+            <div class="z-10 relative font-bold text-6xl px-5 md:px-20 lg:px-0 leading-[70px] md:text-8xl lg:text-9xl lg:leading-[145px] title-welcome">
                 <span class="block">Hello</span>
                 <span class="block">It's</span>
                 <span id="animatedText" class="block text-red-600"></span>
@@ -55,42 +55,3 @@ setTimeout(() => {
     </section>
 
 </template>
-
-<style scoped>
-.image-overlay::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    box-shadow: 200px 31px 229px 200px rgba(0,0,0,0.98) inset;
-    -webkit-box-shadow: 200px 31px 229px 200px rgba(0,0,0,0.98) inset;
-    -moz-box-shadow: 200px 31px 229px 200px rgba(0,0,0,0.98) inset;
-}
-
-@media (max-width: 1536px) {
-    .image-overlay::after {
-        box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.95) inset;
-        -webkit-box-shadow: 200px 37px 113px 106px rgba(0,0,0,0.95) inset;
-        -moz-box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.92) inset;
-    }
-}
-
-@media (max-width: 1200px) {
-    .image-overlay::after {
-        box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
-        -webkit-box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
-        -moz-box-shadow: 200px 31px 229px 200px rgba(0,0,0,1) inset;
-    }
-}
-
-@media (max-width: 450px) {
-    .image-overlay::after {
-        box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.80) inset;
-        -webkit-box-shadow: 200px 37px 113px 106px rgba(0,0,0,0.80) inset;
-        -moz-box-shadow: 200px 37px 63px 86px rgba(0,0,0,0.80) inset;
-    }
-}
-
-</style>

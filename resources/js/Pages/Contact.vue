@@ -4,10 +4,23 @@ import { onMounted, ref } from 'vue';
 import Menu from '@/Components/Menu.vue';
 import LightLayout from '@/Layouts/LightLayout.vue';
 import Footer from '@/Components/Footer.vue';
+import { contactSchema } from '@/validations/contact-schema';
+import { useField, useForm } from 'vee-validate';
+import Alert from '@/Components/Alert.vue';
 
 const TransitionState = ref(false);
 onMounted(() => {
     TransitionState.value = true;
+});
+const showAlert = ref(false);
+const { handleSubmit, resetForm } = useForm({validationSchema : contactSchema});
+const name = useField('name');
+const email = useField('email');
+const description = useField('description');
+
+const submit = handleSubmit((values) => {
+    showAlert.value = true;
+    resetForm();
 });
 </script>
 
@@ -18,11 +31,16 @@ onMounted(() => {
     <!-- About -->
     <transition name="fade" mode="out-in">
         <section v-if="TransitionState" id="about" class="w-full relative overflow-hidden">
+            <Alert v-if="showAlert" >
+                {{ 'Email sent successfully' }}
+            </Alert>
             <div class="min-h-full px-5 md:px-20 lg:px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
                 <div class="w-full">
                     <h2 class="font-bold text-3xl lg:text-5xl text-gray-700">
                         Let's talk
                     </h2>
+
+                    <a href="mailto:christoper.patiho@gmail.com" class="mt-3 inline-flex text-lg">christoper.patiho@gmail.com </a>
 
                     <div class="mt-9 text-lg flex flex-col gap-5">
                         <p class="leading-8">
@@ -48,22 +66,31 @@ onMounted(() => {
                     </div>
 
                     <div class="mt-9">
-                        <form>
-                            <div class="flex flex-col lg:flex-row items-center justify-between gap-5 w-full">
-                                <div class="relative w-full">
-                                    <input required type="text" name="name" id="name" class="block px-2.5 bg-transparent border border-gray-300 transition-colors duration-200 pb-2.5 pt-4 w-full text-sm focus:border-gray-400 rounded-lg appearance-none focus:outline-none focus:ring-0 peer" placeholder=" ">
-                                    <label for="name" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Name</label>
+                        <form @submit.prevent="submit" class="w-full">
+                            <div class="flex flex-col lg:flex-row items-center justify-between lg:gap-5 w-full">
+                                <div class="w-full">
+                                    <div class="relative w-full">
+                                        <input v-model="name.value.value" type="text" name="name" id="name" class="block px-2.5 bg-transparent border border-gray-300 transition-colors duration-200 pb-2.5 pt-4 w-full text-sm focus:border-gray-400 rounded-lg appearance-none focus:outline-none focus:ring-0 peer" placeholder=" ">
+                                        <label for="name" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Name</label>
+                                    </div>
+                                    <p class="text-red-500 text-xs font-medium h-4 my-1">{{ name.errorMessage.value }}</p>
                                 </div>
-                                <div class="relative w-full">
-                                    <input required type="email" name="email" id="email" class="block px-2.5 bg-transparent border border-gray-300 transition-colors duration-200 pb-2.5 pt-4 w-full text-sm focus:border-gray-400 rounded-lg appearance-none focus:outline-none focus:ring-0 peer" placeholder=" ">
-                                    <label for="email" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">E-mail</label>
+                                <div class="w-full">
+                                    <div class="relative w-full">
+                                        <input v-model="email.value.value" type="email" name="email" id="email" class="block px-2.5 bg-transparent border border-gray-300 transition-colors duration-200 pb-2.5 pt-4 w-full text-sm focus:border-gray-400 rounded-lg appearance-none focus:outline-none focus:ring-0 peer" placeholder=" ">
+                                        <label for="email" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">E-mail</label>
+                                    </div>
+                                    <p class="text-red-500 text-xs font-medium h-4 my-1">{{ email.errorMessage.value }}</p>
                                 </div>
                             </div>
-                            <div class="relative mt-5">
-                                <textarea required name="comments" id="description" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-300 transition-colors duration-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer fixed-height resize-none h-24" placeholder=" "></textarea>
-                                <label for="description" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:top-1/3 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Your message</label>
+                            <div class="w-full">
+                                <div class="relative">
+                                    <textarea v-model="description.value.value" name="comments" id="description" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-300 transition-colors duration-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer fixed-height resize-none h-24" placeholder=" "></textarea>
+                                    <label for="description" class="absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:top-1/3 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Your message</label>
+                                </div>
+                                <p class="text-red-500 text-xs font-medium h-4 my-1">{{ description.errorMessage.value }}</p>
                             </div>
-                            <div class="mt-7 flex items-center justify-end">
+                            <div class="mt-3 flex items-center justify-end">
                                 <button type="submit" class="bg-gradient-to-tr border hover:from-white hover:to-white hover:text-red-600 hover:border-red-500 from-red-600 to-pink-400 py-2 px-4 rounded font-semibold text-white transition-all duration-500">Send email</button>
                             </div>
                         </form>

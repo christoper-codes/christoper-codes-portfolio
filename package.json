@@ -20,6 +20,7 @@
         "vue": "^3.4.0"
     },
     "dependencies": {
-        "typeit": "^8.8.7"
+        "typeit": "^8.8.7",
+        "vee-validate": "^4.15.0"
     }
 }
