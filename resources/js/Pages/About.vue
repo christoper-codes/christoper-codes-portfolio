@@ -5,6 +5,7 @@ import Menu from '@/Components/Menu.vue';
 import LightLayout from '@/Layouts/LightLayout.vue';
 import Desk from '../../../public/assets/img/hd-image.jpg'
 import Footer from '@/Components/Footer.vue';
+import NavLink from '@/Components/NavLink.vue';
 
 const TransitionState = ref(false);
 onMounted(() => {
@@ -20,6 +21,12 @@ onMounted(() => {
     <transition name="fade" mode="out-in">
         <section v-if="TransitionState" id="about" class="w-full relative overflow-hidden">
             <div class="min-h-full px-5 md:px-20 lg:px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
+                <div class="text-center flex gap-5 relative z-20">
+                    <NavLink :href="route('welcome')" :active="route().current('welcome')"><span>Welcome</span></NavLink>
+                    <NavLink :href="route('about')" :active="route().current('about')"><span>About</span></NavLink>
+                    <NavLink :href="route('uses')" :active="route().current('uses')"><span>Uses</span></NavLink>
+                    <NavLink :href="route('contact')" :active="route().current('contact')"><span>Let's talk</span></NavLink>
+                </div>
                 <div class="w-full">
                     <h2 class="font-bold text-3xl lg:text-5xl text-gray-700">
                         Hi there,
@@ -39,11 +46,6 @@ onMounted(() => {
                             When I'm not coding, I enjoy shooting sports, fishing, reading cosmic horror books, listening to rock music, and being a fan of black T-shirts.
                         </p>
                     </div>
-                    <div class="mt-16 relative">
-                        <img class="mx-auto lg:mx-0 absolute inset-0 translate-y-1 -translate-x-1 object-cover filter blur saturate-150 opacity-50 w-52 h-52 rounded-full hover:scale-110 cursor-pointer transition-all duration-500" :src="Desk" alt="Desk">
-                        <img class="mx-auto lg:mx-0 w-52 h-52 relative rounded-full hover:scale-110 cursor-pointer transition-all duration-500" :src="Desk" alt="Desk">
-                    </div>
-
                 </div>
                 <div class="w-full mt-7">
                     <h2 class="font-bold text-xl text-gray-700">Some interesting projects I've worked on include:</h2>
@@ -57,13 +59,13 @@ onMounted(() => {
                     </div>
                     <h2 class="font-bold text-xl text-gray-700 mt-20">Active at:</h2>
                     <div class="mt-9 flex-col lg:flex-row flex items-center justify-between gap-5 w-full">
-                        <a href="https://krodox.com/" target="_blank" class="flex items-center w-full justify-between gap-5 p-5 rounded-xl border shadow-lg hover:scale-105 cursor-pointer transition-all duration-500">
+                        <a href="https://krodox.com/" target="_blank" class="flex items-center w-full justify-between gap-5 p-5 border cursor-pointer transition-all duration-500">
                             <h3>Krodox</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-7 h-auto" viewBox="0 0 24 24">
                                 <path d="M19.071 4.929c-3.899-3.898-10.243-3.898-14.143 0-3.898 3.899-3.898 10.244 0 14.143 3.899 3.898 10.243 3.898 14.143 0 3.899-3.9 3.899-10.244 0-14.143zm-3.536 10.607-2.828-2.829-3.535 3.536-1.414-1.414 3.535-3.536-2.828-2.829h7.07v7.072z"></path>
                             </svg>
                         </a>
-                        <a href="https://absama.com/index.html" target="_blank" class="flex items-center w-full justify-between gap-5 p-5 rounded-xl border shadow-lg hover:scale-105 cursor-pointer transition-all duration-500">
+                        <a href="https://absama.com/index.html" target="_blank" class="flex items-center w-full justify-between gap-5 p-5 border cursor-pointer transition-all duration-500">
                             <h3>Grupo Sama</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-7 h-auto" viewBox="0 0 24 24">
                                 <path d="M19.071 4.929c-3.899-3.898-10.243-3.898-14.143 0-3.898 3.899-3.898 10.244 0 14.143 3.899 3.898 10.243 3.898 14.143 0 3.899-3.9 3.899-10.244 0-14.143zm-3.536 10.607-2.828-2.829-3.535 3.536-1.414-1.414 3.535-3.536-2.828-2.829h7.07v7.072z"></path>

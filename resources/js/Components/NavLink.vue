@@ -15,15 +15,12 @@ const props = defineProps({
 
 const classes = computed(() =>
     props.active
-        ? 'text-red-600 hover:cursor-pointer'
-        : 'hover:text-red-600 transition-all duration-500 hover:cursor-pointer',
+        ? 'text-red-600 hover:cursor-pointer underline'
+        : 'underline text-blue-600 hover:cursor-pointer',
 );
 
 const handleClick = () => {
-    menuState.value = !menuState.value;
-    setTimeout(() => {
-        router.visit(props.href);
-    }, 300);
+    router.visit(props.href);
 };
 </script>
 

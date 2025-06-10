@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
         <transition name="slide" mode="out-in">
             <div v-if="menuState" class="bg-slate-50 fixed top-0 left-0 h-full w-[100%] md:w-[50%] lg:w-[43%] xl:w-[35%] z-30 text-gray-500">
                 <div class="h-full w-full flex flex-col items-start justify-between py-7 px-5">
-                    <div @click="menuState = !menuState" class="p-1 border-2 rounded cursor-pointer">
+                    <div @click="menuState = !menuState" class="p-1 border-2 cursor-pointer">
                         <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     </div>
                     <div class="w-full text-center flex flex-col gap-7 2xl:gap-9 text-2xl 2xl:text-3xl">

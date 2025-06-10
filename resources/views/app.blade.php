@@ -17,7 +17,7 @@
         @inertiaHead
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     </head>
-    <body class="font-sans antialiased text-gray-500">
+    <body class="antialiased text-gray-500" style="font-family: 'Times New Roman', Times, serif;">
         @inertia
     </body>
 </html>
