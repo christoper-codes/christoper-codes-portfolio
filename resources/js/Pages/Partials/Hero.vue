@@ -2,14 +2,16 @@
 
 </script>
 <template>
-    <section id="hero" class="flex items-center gap-10">
-        <div class="flex-1">
-            <div class="flex flex-col gap-2">
-                <h1 class="text-2xl uppercase">Christoper Patiño Santos</h1>
-                <h2>Software engineer</h2>
+    <section id="hero" class="flex flex-col md:flex-row items-center gap-10">
+        <div class="w-[100%]">
+            <div class="flex flex-col gap-5">
+                <div>
+                    <h1 class="text-2xl uppercase">Christoper Patiño Santos</h1>
+                    <h2 class="mt-2">Software engineer</h2>
+                </div>
                 <p>I have two passions in life: software engineering and data science. Luckily, I’ve spent the last few years doing both at the same time.</p>
             </div>
-            <div class="flex items-center gap-2 mt-5">
+            <div class="flex items-center gap-3 mt-5">
                 <a href="https://x.com/christopercodes" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white! text-white! h-auto" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
                 </a>
@@ -21,8 +23,8 @@
                 </a>
             </div>
         </div>
-        <div class="flex-1">
-            <img src="/assets/img/profile-desk.jpg" alt="Profile picture" class="rounded-lg shadow-lg w-full h-auto" />
+        <div class="w-full md:w-[75%] rounded-2xl h-80 overflow-hidden">
+            <img class="w-full h-full object-cover object-top" src="/assets/img/profile-desk.jpg" alt="Profile picture" />
         </div>
     </section>
 </template>
