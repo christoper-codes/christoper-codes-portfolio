@@ -6,3 +6,9 @@ body {
     font-family: 'Space Grotesk', system-ui, sans-serif;
     line-height: 1.8;
 }
+p {
+    color: #525252;
+}
+.dark p {
+    color: #d4d4d4;
+}

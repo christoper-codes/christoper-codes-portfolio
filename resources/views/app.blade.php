@@ -18,7 +18,7 @@
         @inertiaHead
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     </head>
-    <body class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50">
+    <body class="bg-white dark:bg-neutral-950 text-black dark:text-white">
         @inertia
     </body>
 </html>
