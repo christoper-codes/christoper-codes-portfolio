@@ -23,9 +23,9 @@ onMounted(() => {
             <div class="min-h-full px-5 md:px-20 lg:px-5 lg:max-w-[50%] mt-10 lg:mt-0 py-12 flex  flex-col items-start mx-auto gap-10">
                 <div class="text-center flex gap-5 relative z-20">
                     <NavLink :href="route('welcome')" :active="route().current('welcome')"><span>Welcome</span></NavLink>
-                    <NavLink :href="route('about')" :active="route().current('about')"><span>About</span></NavLink>
-                    <NavLink :href="route('uses')" :active="route().current('uses')"><span>Uses</span></NavLink>
-                    <NavLink :href="route('contact')" :active="route().current('contact')"><span>Let's talk</span></NavLink>
+                    <NavLink  :active="route().current()"><span>About</span></NavLink>
+                    <NavLink :href="route()" :active="route().current()"><span>Uses</span></NavLink>
+                    <NavLink :href="route()" :active="route().current()"><span>Let's talk</span></NavLink>
                 </div>
                 <div class="w-full">
                     <h2 class="font-bold text-3xl lg:text-5xl text-gray-700">

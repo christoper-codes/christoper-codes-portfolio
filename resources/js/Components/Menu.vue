@@ -17,9 +17,9 @@ const year = new Date().getFullYear();
                     </div>
                     <div class="w-full text-center flex flex-col gap-7 2xl:gap-9 text-2xl 2xl:text-3xl">
                         <NavLink :href="route('welcome')" :active="route().current('welcome')"><span>Welcome</span></NavLink>
-                        <NavLink :href="route('about')" :active="route().current('about')"><span>About</span></NavLink>
-                        <NavLink :href="route('uses')" :active="route().current('uses')"><span>Uses</span></NavLink>
-                        <NavLink :href="route('contact')" :active="route().current('contact')"><span>Let's talk</span></NavLink>
+                        <NavLink  :active="route().current()"><span>About</span></NavLink>
+                        <NavLink :href="route()" :active="route().current()"><span>Uses</span></NavLink>
+                        <NavLink :href="route()" :active="route().current()"><span>Let's talk</span></NavLink>
                     </div>
                     <div class="flex items-center justify-center gap-3 flex-col w-full">
                         <div class="flex items-center gap-4">
