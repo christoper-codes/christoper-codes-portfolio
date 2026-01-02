@@ -13,15 +13,8 @@ onMounted(() => {
 
 <template>
     <Head title="Welcome" />
-    <transition name="fade" mode="out-in">
-        <section v-if="TransitionState">
-            <GuestLayout />
-        </section>
-    </transition>
-
-    <transition name="fade" mode="out-in">
-        <section v-if="TransitionState">
-            <Hero />
-        </section>
-    </transition>
+    <main class="min-h-full w-full lg:max-w-3xl flex flex-col items-start mx-auto">
+        <GuestLayout />
+        <Hero />
+    </main>
 </template>

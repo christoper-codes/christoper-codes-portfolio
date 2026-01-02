@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <div class="min-h-full w-full lg:max-w-3xl flex flex-col items-start mx-auto">
+    <section id="hero">
         <div class="flex flex-col gap-3">
             <h1 class="text-2xl uppercase">Christoper Patiño Santos</h1>
             <h2>Software engineer</h2>
@@ -18,5 +18,5 @@
                 <img class="w-5 h-auto" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter image">
             </a>
         </div>
-    </div>
+    </section>
 </template>
