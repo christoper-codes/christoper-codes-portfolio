@@ -2,6 +2,7 @@
 import { Head, Link } from '@inertiajs/vue3';
 import { nextTick, onMounted, ref } from 'vue';
 import NavLink from '@/Components/NavLink.vue';
+import GuestLayout from '@/Layouts/GuestLayout.vue';
 
 const TransitionState = ref(false);
 
@@ -13,7 +14,7 @@ onMounted(async () => {
 
 <template>
     <Head title="Welcome" />
-
+    <GuestLayout />
     <!-- masthead -->
      <transition name="fade" mode="out-in">
         <section v-if="TransitionState" id="masthead" class="h-screen w-full relative overflow-hidden">
