@@ -4,6 +4,7 @@ import { onMounted, ref } from 'vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import Hero from './Partials/Hero.vue';
 import Stack from './Partials/Stack.vue';
+import Work from './Partials/Work.vue';
 
 const TransitionState = ref(false);
 
@@ -19,6 +20,7 @@ onMounted(() => {
         <div class="space-y-16">
             <Hero />
             <Stack />
+            <Work />
         </div>
     </main>
 </template>
