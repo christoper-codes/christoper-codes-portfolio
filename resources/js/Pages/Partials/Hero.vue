@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
     <section id="hero" class="flex flex-col md:flex-row items-center gap-10">
         <div class="w-[100%]">
@@ -23,7 +20,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-[75%] rounded-2xl h-80 overflow-hidden">
+        <div class="w-full md:w-[75%] rounded-3xl h-72 overflow-hidden">
             <img class="w-full h-full object-cover object-top" src="/assets/img/profile-desk.jpg" alt="Profile picture" />
         </div>
     </section>
