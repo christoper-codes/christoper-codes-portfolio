@@ -4,10 +4,10 @@
         <main class="flex flex-col gap-7">
             <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2">
-                    <div class="inline bg-neutral-200 dark:bg-neutral-900 py-2 px-4 rounded-md text-center">
+                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         TALL
                     </div>
-                    <div class="inline bg-neutral-200 dark:bg-neutral-900 py-2 px-4 rounded-md text-center">
+                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         VILT
                     </div>
                 </div>
@@ -15,7 +15,7 @@
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2">
-                    <div class="inline bg-neutral-200 dark:bg-neutral-900 py-2 px-4 rounded-md text-center">
+                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         PyData
                     </div>
                 </div>
