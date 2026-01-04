@@ -4,20 +4,20 @@
         <main class="flex flex-col gap-7">
             <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2">
-                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
+                    <a href="https://tallstack.dev/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         TALL
-                    </div>
-                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
+                    </a>
+                    <a href="https://viltstack.dev/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         VILT
-                    </div>
+                    </a>
                 </div>
                 <p>For full stack applications</p>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2">
-                    <div class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
+                    <a href="https://www.python.org/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
                         PyData
-                    </div>
+                    </a>
                 </div>
                 <p>For data analysis and science</p>
             </div>
