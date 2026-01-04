@@ -37,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <section id="source">
+    <section id="source" class="animate-fade-up animate-delay-[1700ms] animate-once">
         <h2 class="text-2xl uppercase mb-5">Open Source</h2>
 
         <main>

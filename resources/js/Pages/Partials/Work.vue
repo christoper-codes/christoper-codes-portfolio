@@ -1,5 +1,5 @@
 <template>
-    <section id="work">
+    <section id="work" class="animate-fade-up animate-delay-[2100ms] animate-once">
         <h2 class="text-2xl uppercase mb-5">Work</h2>
 
         <ol class="border-neutral-300 dark:border-neutral-600 relative -end-2 border-s-2">

@@ -1,5 +1,5 @@
 <template>
-    <section id="stack">
+    <section id="stack" class="animate-fade-up animate-delay-[1900ms] animate-once">
         <h2 class="text-2xl uppercase mb-5">Stack</h2>
         <main class="flex flex-col gap-7">
             <div class="flex flex-col gap-2">

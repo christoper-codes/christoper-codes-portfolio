@@ -20,6 +20,7 @@
         "vue": "^3.4.0"
     },
     "dependencies": {
+        "tailwindcss-animated": "^2.0.0",
         "typeit": "^8.8.7",
         "vee-validate": "^4.15.0"
     }
