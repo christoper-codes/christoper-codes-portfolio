@@ -5,6 +5,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
 import Hero from './Partials/Hero.vue';
 import Stack from './Partials/Stack.vue';
 import Work from './Partials/Work.vue';
+import Education from './Partials/Education.vue';
 
 const TransitionState = ref(false);
 
@@ -21,6 +22,7 @@ onMounted(() => {
             <Hero />
             <Stack />
             <Work />
+            <Education />
         </div>
     </main>
 </template>
