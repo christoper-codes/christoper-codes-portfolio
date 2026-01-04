@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
     <Head title="Welcome" />
-    <main class="min-h-full w-full lg:max-w-3xl flex flex-col items-start mx-auto">
+    <main class="min-h-full w-full lg:max-w-2xl flex flex-col items-start mx-auto">
         <GuestLayout />
         <div class="space-y-16">
             <Hero />

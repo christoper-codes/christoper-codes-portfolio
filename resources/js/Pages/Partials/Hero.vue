@@ -1,12 +1,12 @@
 <template>
-    <section id="hero" class="flex flex-col md:flex-row items-center gap-10">
+    <section id="hero" class="flex flex-col md:flex-row items-center gap-7">
         <div class="w-[100%]">
             <div class="flex flex-col gap-5">
                 <div>
                     <h1 class="text-2xl uppercase">Christoper Patiño Santos</h1>
                     <h2 class="mt-2">Software engineer</h2>
                 </div>
-                <p>I have two passions in life: software engineering and data science. Luckily, I’ve spent the last few years doing both at the same time.</p>
+                <p>Two disciplines inspire me: Software engineering and Data science. Luckily, I've spent the last few years doing both at the same time.</p>
             </div>
             <div class="flex items-center gap-3 mt-6">
                 <a href="https://x.com/christopercodes" target="_blank">
@@ -20,7 +20,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-[75%] rounded-3xl h-72 overflow-hidden">
+        <div class="w-full md:w-[70%] rounded-3xl h-72 overflow-hidden">
             <img class="w-full h-full object-cover object-top" src="/assets/img/profile-desk.jpg" alt="Profile picture" />
         </div>
     </section>
