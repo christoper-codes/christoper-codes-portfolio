@@ -3,6 +3,11 @@ import TypeIt from "typeit";
 import { onMounted, ref } from "vue";
 
 const copy = ref(false);
+const isMobile = window.innerWidth < 650;
+const command = isMobile
+  ? "gh repo clone christoper..."
+  : "gh repo clone christoper-codes/christoper-codes-portfolio";
+
 const copyCommand = () => {
     copy.value = true;
     const command = "gh repo clone christoper-codes/christoper-codes-portfolio";
@@ -22,7 +27,7 @@ onMounted(() => {
         afterComplete: (instance) => {
         instance
             .pause(1000)
-            .type("gh repo clone christoper-codes/christoper-codes-portfolio")
+            .type(command)
             .pause(7000)
             .delete()
             .go();
@@ -32,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <section id="template">
+    <section id="source">
         <h2 class="text-2xl uppercase mb-5">Open Source</h2>
 
         <main>
