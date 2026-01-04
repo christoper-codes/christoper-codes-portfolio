@@ -18,7 +18,7 @@ onMounted(() => {
     <Head title="Welcome" />
     <main class="min-h-full w-full lg:max-w-2xl flex flex-col items-start mx-auto">
         <GuestLayout />
-        <div class="space-y-16">
+        <div class="space-y-16 mt-10">
             <Hero />
             <Stack />
             <Work />
