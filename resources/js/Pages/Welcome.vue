@@ -1,18 +1,12 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
-import { onMounted, ref } from 'vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import Footer from '@/Components/Footer.vue';
 import Hero from './Partials/Hero.vue';
 import Stack from './Partials/Stack.vue';
 import Work from './Partials/Work.vue';
 import Education from './Partials/Education.vue';
-
-const TransitionState = ref(false);
-
-onMounted(() => {
-  TransitionState.value = true;
-});
+import Source from './Partials/Source.vue';
 </script>
 
 <template>
@@ -21,10 +15,11 @@ onMounted(() => {
         <GuestLayout />
         <div class="space-y-16 mt-10">
             <Hero />
+            <Source />
             <Stack />
             <Work />
             <Education />
+            <Footer />
         </div>
     </main>
-    <Footer />
 </template>
