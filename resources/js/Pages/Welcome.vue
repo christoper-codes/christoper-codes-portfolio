@@ -2,6 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 import { onMounted, ref } from 'vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
+import Footer from '@/Components/Footer.vue';
 import Hero from './Partials/Hero.vue';
 import Stack from './Partials/Stack.vue';
 import Work from './Partials/Work.vue';
@@ -25,4 +26,5 @@ onMounted(() => {
             <Education />
         </div>
     </main>
+    <Footer />
 </template>
