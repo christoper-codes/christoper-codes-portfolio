@@ -3,10 +3,10 @@
         <h2 class="text-2xl uppercase mb-5">Work</h2>
 
         <ol class="border-neutral-300 dark:border-neutral-600 relative -end-2 border-s-2">
-            <li class="pl-4 pb-10 pr-0">
+            <li class="pl-5 pb-10 pr-0">
                 <div class="flex justify-between gap-4">
                     <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-1.5 mt-0.5 size-3 rounded-full border-2"></div>
+                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
                                 <p>Sep/2025 - Present</p>
@@ -26,10 +26,10 @@
                     </div>
                 </div>
             </li>
-            <li class="pl-4 pb-10 pr-0">
+            <li class="pl-5 pb-10 pr-0">
                 <div class="flex justify-between gap-4">
                     <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-1.5 mt-0.5 size-3 rounded-full border-2"></div>
+                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
                                 <p>Jan/2025 - Present</p>
@@ -49,10 +49,10 @@
                     </div>
                 </div>
             </li>
-            <li class="pl-4 pb-10 pr-0">
+            <li class="pl-5 pb-10 pr-0">
                 <div class="flex justify-between gap-4">
                     <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-1.5 mt-0.5 size-3 rounded-full border-2"></div>
+                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
                                 <p>Jan/2024 - Jul/2025</p>
@@ -70,7 +70,7 @@
             <li class="pl-4 pr-0">
                 <div class="flex justify-between gap-4">
                     <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-1.5 mt-0.5 size-3 rounded-full border-2"></div>
+                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
                                 <p>Jun/2023 - Dec/2023</p>
