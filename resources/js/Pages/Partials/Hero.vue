@@ -4,7 +4,7 @@
             <div class="flex flex-col gap-5">
                 <div>
                     <h1 class="text-2xl uppercase">Christoper Patiño Santos</h1>
-                    <h2 class="mt-2">Software engineer</h2>
+                    <h2 class="mt-1">Software engineer</h2>
                 </div>
                 <p>Two disciplines inspire me: Software engineering and Data science. Luckily, I've spent the last few years doing both at the same time.</p>
             </div>
