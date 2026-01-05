@@ -9,12 +9,12 @@
                         <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
-                                <p>Sep/2025 - Present</p>
+                                <p>Sep/2025 - Current</p>
                             </div>
                             <div class="flex items-center gap-2 text-sm">
                                 <h2 class="text-lg">Principal engineer</h2>
                                 <div class="bg-black dark:bg-white text-white dark:text-black inline px-2 py-1 rounded-md text-xs">
-                                    Actual
+                                    Present
                                 </div>
                             </div>
                             <div class="flex items-center gap-2 text-sm">
@@ -32,12 +32,12 @@
                         <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
                         <main class="flex flex-col gap-2">
                             <div class="flex items-center gap-2 text-sm">
-                                <p>Jan/2025 - Present</p>
+                                <p>Jan/2025 - Current</p>
                             </div>
                              <div class="flex items-center gap-2 text-sm">
                                 <h2 class="text-lg">Backend developer</h2>
                                 <div class="bg-black dark:bg-white text-white dark:text-black inline px-2 py-1 rounded-md text-xs">
-                                    Actual
+                                    Present
                                 </div>
                             </div>
                             <div class="flex items-center gap-2 text-sm">
