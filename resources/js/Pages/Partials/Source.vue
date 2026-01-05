@@ -5,7 +5,7 @@ import { onMounted, ref } from "vue";
 const copy = ref(false);
 const isMobile = window.innerWidth < 650;
 const command = isMobile
-  ? "gh repo clone christoper..."
+  ? "gh repo clone christo..."
   : "gh repo clone christoper-codes/christoper-codes-portfolio";
 
 const copyCommand = () => {
