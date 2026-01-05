@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <footer class="text-center w-full text-xs 2xl:text-sm">
+    <footer class="text-center w-full text-sm">
         © {{ year }} Christoper Patiño. This website is open source.
     </footer>
 </template>
