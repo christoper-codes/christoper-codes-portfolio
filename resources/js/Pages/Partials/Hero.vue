@@ -22,7 +22,8 @@
         </div>
         <div class="animate-fade-up animate-delay-[900ms] animate-once w-full md:w-[70%] rounded-[30px] h-72 overflow-hidden relative">
             <div class="bg-black/0 h-full w-full absolute top-0 left-0 z-20"></div>
-            <img class="w-full h-full object-cover object-top" src="/assets/img/profile.jpg" alt="Profile picture" />
+            <img class="w-full h-full object-cover object-top hidden lg:block" src="/assets/img/profile.jpg" alt="Profile picture" />
+            <img class="w-full h-full object-cover object-top lg:hidden" src="/assets/img/profile-mobile.jpeg" alt="Profile picture" />
         </div>
     </section>
 </template>
