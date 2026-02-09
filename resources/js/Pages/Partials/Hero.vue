@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="animate-fade-up animate-delay-[900ms] animate-once w-full md:w-[70%] rounded-[30px] h-72 overflow-hidden relative">
-            <div class="bg-black/20 h-full w-full absolute top-0 left-0 z-20"></div>
+            <div class="bg-black/0 h-full w-full absolute top-0 left-0 z-20"></div>
             <img class="w-full h-full object-cover object-top" src="/assets/img/profile.jpg" alt="Profile picture" />
         </div>
     </section>
