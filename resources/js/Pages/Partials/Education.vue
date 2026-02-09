@@ -12,11 +12,6 @@
                 <p class="text-sm mt-2">Oracle</p>
                 <p class="text-sm">2025</p>
             </div>
-            <div class="bg-neutral-100 dark:bg-neutral-900 p-5 rounded-2xl border border-neutral-200 dark:border-neutral-800">
-                <h3 class="text-base">Full Stack Web Development Bootcamp</h3>
-                <p class="text-sm mt-2">CS facturación - Envios Perros</p>
-                <p class="text-sm">2023</p>
-            </div>
         </main>
     </section>
 </template>
