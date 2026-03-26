@@ -12,13 +12,24 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <link href="https://fonts.bunny.net/css?family=space-grotesk:400,500,600,700&family=jetbrains-mono:400,700" rel="stylesheet" />
 
+        <!-- Theme: apply before first paint to avoid flash -->
+        <script>
+            (function() {
+                var saved = localStorage.getItem('theme');
+                var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (saved === 'dark' || (!saved && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                }
+            })();
+        </script>
+
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     </head>
-    <body class="bg-white dark:bg-neutral-950 text-black dark:text-white overflow-x-hidden px-5 lg:px-0 py-5 md:py-7">
+    <body class="overflow-x-hidden">
         @inertia
     </body>
 </html>
