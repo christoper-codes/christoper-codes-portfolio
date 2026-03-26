@@ -21,7 +21,7 @@ onMounted(() => {
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
           </span>
-          <span class="text-sm text-[rgb(var(--muted))]">Available for new opportunities</span>
+          <span class="text-sm text-[rgb(var(--muted))]">Deploying a rocket</span>
         </div>
 
         <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6">

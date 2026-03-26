@@ -2,12 +2,6 @@
 const workExperience = [
   {
     period: '2025 - Present',
-    role: 'Principal Engineer',
-    company: 'Neura S. de R.L.',
-    location: 'CDMX, Mexico'
-  },
-  {
-    period: '2025 - Present',
     role: 'Backend Developer',
     company: 'Krodox LLC',
     location: 'Miami, USA'
@@ -19,11 +13,17 @@ const workExperience = [
     location: 'Xalapa, Mexico'
   },
   {
-    period: '2023',
+    period: '2023 - 2024',
     role: 'Backend Developer',
     company: 'Gigante de los azulejos',
     location: 'Veracruz, Mexico'
-  }
+  },
+    {
+    period: '2022 - Present',
+    role: 'Principal Engineer',
+    company: 'Victoria S. de R.L.',
+    location: 'CDMX, Mexico'
+  },
 ];
 </script>
 
