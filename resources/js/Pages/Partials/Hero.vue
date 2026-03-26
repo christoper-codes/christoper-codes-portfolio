@@ -1,32 +1,73 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const isVisible = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    isVisible.value = true;
+  }, 100);
+});
+</script>
+
 <template>
-    <section id="hero" class="flex flex-col md:flex-row items-center gap-7">
-        <div class="w-[100%]">
-            <div class="flex flex-col gap-5">
-                <div>
-                    <h1 class="animate-fade-up animate-delay-[300ms] animate-once text-2xl uppercase">Christoper Patiño Santos</h1>
-                    <h2 class="animate-fade-up animate-delay-[500ms] animate-once mt-1">Software engineer</h2>
-                </div>
-                <p class="animate-fade-up animate-delay-[700ms] animate-once">Two disciplines inspire me: Software engineering and Data science. Luckily, I've spent the last few years doing both at the same time.</p>
-            </div>
-            <div class="flex items-center gap-3 mt-6">
-                <a href="https://x.com/christopercodes" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-fade animate-delay-[1100ms] animate-once w-6 fill-white! text-white! h-auto" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
-                </a>
-                <a href="https://github.com/christoper-codes" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-fade animate-delay-[1300ms] animate-once w-8 fill-current h-auto" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/christoper-pati%C3%B1o/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-fade animate-delay-[1500ms] animate-once w-7 fill-white! text-white! h-auto" aria-label="LinkedIn" role="img" viewBox="0 0 512 512" fill="#ffffff"><rect width="512" height="512" rx="15%" fill="#0077b5"/><circle cx="142" cy="138" r="37"/><path stroke="#ffffff" stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
-                </a>
-                <a href="https://www.instagram.com/_christosantos/" target="_blank">
-                    <img class="animate-fade animate-delay-[1700ms] animate-once w-[30px] h-auto" src="/assets/img/instagram.png" alt="Profile picture" />
-                </a>
-            </div>
+  <section
+    :class="['mb-24 transition-all duration-700', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']"
+  >
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-10">
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <span class="text-sm text-[rgb(var(--muted))]">Deploying a rocket</span>
         </div>
-        <div class="animate-fade-up animate-delay-[900ms] animate-once w-full md:w-[70%] rounded-[30px] h-72 overflow-hidden relative">
-            <div class="bg-black/0 h-full w-full absolute top-0 left-0 z-20"></div>
-            <img class="w-full h-full object-cover object-top hidden lg:block" src="/assets/img/profile.jpg" alt="Profile picture" />
-            <img class="w-full h-full object-cover object-top lg:hidden" src="/assets/img/profile-mobile.jpeg" alt="Profile picture" />
+
+        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6">
+          Christoper Patiño
+          <span class="block text-[rgb(var(--muted))] text-3xl sm:text-4xl font-normal mt-2">Software Engineer &amp; Founder</span>
+        </h1>
+
+        <p class="text-lg text-[rgb(var(--muted))] max-w-2xl leading-relaxed mb-8">
+          Two disciplines inspire me: Software engineering and Data science. Luckily, I've spent the last few years doing both at the same time.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="mailto:christoper.patiho@gmail.com"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-[rgb(var(--foreground))] text-[rgb(var(--background))] rounded-full font-medium hover:opacity-90 transition-opacity"
+          >
+            Get in touch
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/christoper-codes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-[rgb(var(--border))] text-[rgb(var(--foreground))] rounded-full font-medium hover:border-[rgb(var(--muted))] transition-colors"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
         </div>
-    </section>
+      </div>
+
+      <!-- Profile photo -->
+      <div class="flex-shrink-0 sm:self-start">
+        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-[rgb(var(--border))] ring-4 ring-[rgb(var(--background))]">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="/assets/img/profile.jpeg"
+            alt="Christoper Patino"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
