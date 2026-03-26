@@ -2,13 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+@layer base {
+  :root {
+    --background: 250 250 252;
+    --foreground: 15 23 42;
+    --muted: 100 116 139;
+    --accent: 6 182 212;
+    --border: 226 232 240;
+    --card: 255 255 255;
+  }
+
+  .dark {
+    --background: 10 10 12;
+    --foreground: 250 250 252;
+    --muted: 148 163 184;
+    --accent: 34 211 238;
+    --border: 38 38 42;
+    --card: 24 24 27;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))] font-sans antialiased transition-colors duration-300;
     font-family: 'Space Grotesk', system-ui, sans-serif;
     line-height: 1.8;
+  }
+
+  ::selection {
+    @apply bg-cyan-500/20;
+  }
 }
-p {
-    color: #525252;
-}
-.dark p {
-    color: #d4d4d4;
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
 }

@@ -1,27 +1,38 @@
-<template>
-    <section id="stack" class="animate-fade-up animate-delay-[1900ms] animate-once">
-        <h2 class="text-2xl uppercase mb-5">Stack</h2>
-        <main class="flex flex-col gap-7">
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2">
-                    <a href="https://tallstack.dev/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
-                        TALL
-                    </a>
-                    <a href="https://viltstack.dev/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
-                        VILT
-                    </a>
-                </div>
-                <p>For full stack applications</p>
-            </div>
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2">
-                    <a href="https://www.python.org/" target="_blank" class="inline bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 py-2 px-4 rounded-lg text-center">
-                        PyData
-                    </a>
-                </div>
-                <p>For data analysis and science</p>
-            </div>
-        </main>
-    </section>
-</template>
+<script setup>
+const stacks = ['TALL', 'VILT', 'PyData'];
 
+const skills = [
+  'C++', 'C#', 'Java', 'PHP', 'Python', 'JavaScript',
+  'SQL', 'Laravel', 'Livewire', 'Django', 'ASP.NET', 'Vue.js', 'Tailwind'
+];
+</script>
+
+<template>
+  <!-- Stacks -->
+  <section class="mb-20">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))] mb-6">Stacks</h2>
+    <div class="flex flex-wrap gap-3">
+      <span
+        v-for="stack in stacks"
+        :key="stack"
+        class="px-4 py-2 text-sm font-medium bg-[rgb(var(--card))] border border-[rgb(var(--border))] rounded-full"
+      >
+        {{ stack }}
+      </span>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="mb-20">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))] mb-6">Skills</h2>
+    <div class="flex flex-wrap gap-2">
+      <span
+        v-for="skill in skills"
+        :key="skill"
+        class="px-3 py-1.5 text-sm bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 rounded-lg border border-cyan-500/20"
+      >
+        {{ skill }}
+      </span>
+    </div>
+  </section>
+</template>

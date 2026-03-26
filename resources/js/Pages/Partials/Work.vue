@@ -1,90 +1,54 @@
-<template>
-    <section id="work" class="animate-fade-up animate-delay-[2100ms] animate-once">
-        <h2 class="text-2xl uppercase mb-5">Work</h2>
+<script setup>
+const workExperience = [
+  {
+    period: '2025 - Present',
+    role: 'Principal Engineer',
+    company: 'Neura S. de R.L.',
+    location: 'CDMX, Mexico'
+  },
+  {
+    period: '2025 - Present',
+    role: 'Backend Developer',
+    company: 'Krodox LLC',
+    location: 'Miami, USA'
+  },
+  {
+    period: '2024 - 2025',
+    role: 'FullStack Developer',
+    company: 'Sama S.A. de C.V.',
+    location: 'Xalapa, Mexico'
+  },
+  {
+    period: '2023',
+    role: 'Backend Developer',
+    company: 'Gigante de los azulejos',
+    location: 'Veracruz, Mexico'
+  }
+];
+</script>
 
-        <ol class="border-neutral-300 dark:border-neutral-600 relative -end-2 border-s-2">
-            <li class="pl-5 pb-10 pr-0">
-                <div class="flex justify-between gap-4">
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
-                        <main class="flex flex-col gap-2">
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Sep/2025 - Current</p>
-                            </div>
-                            <div class="flex items-center gap-2 text-sm">
-                                <h2 class="text-lg">Principal engineer</h2>
-                                <div class="bg-black dark:bg-white text-white dark:text-black inline px-2 py-1 rounded-md text-xs">
-                                    Present
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Neura S. de R.L.</p>
-                                <span>•</span>
-                                <p>CDMX, Mex</p>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-            </li>
-            <li class="pl-5 pb-10 pr-0">
-                <div class="flex justify-between gap-4">
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
-                        <main class="flex flex-col gap-2">
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Jan/2025 - Current</p>
-                            </div>
-                             <div class="flex items-center gap-2 text-sm">
-                                <h2 class="text-lg">Backend developer</h2>
-                                <div class="bg-black dark:bg-white text-white dark:text-black inline px-2 py-1 rounded-md text-xs">
-                                    Present
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Krodox LLC</p>
-                                <span>•</span>
-                                <p>Miami, USA</p>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-            </li>
-            <li class="pl-5 pb-10 pr-0">
-                <div class="flex justify-between gap-4">
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
-                        <main class="flex flex-col gap-2">
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Jan/2024 - Jul/2025</p>
-                            </div>
-                            <h2 class="text-lg">FullStack developer</h2>
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Sama S.A. de C.V.</p>
-                                <span>•</span>
-                                <p>Xalapa, Mex</p>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-            </li>
-            <li class="pl-4 pr-0">
-                <div class="flex justify-between gap-4">
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="border-neutral-300 dark:border-neutral-600 bg-white dark:bg-black absolute -start-2 mt-0.5 size-4 rounded-full border-2"></div>
-                        <main class="flex flex-col gap-2">
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Jun/2023 - Dec/2023</p>
-                            </div>
-                            <h2 class="text-lg">Backend developer</h2>
-                            <div class="flex items-center gap-2 text-sm">
-                                <p>Gigante de los azulejos</p>
-                                <span>•</span>
-                                <p>Veracruz, Mex</p>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-            </li>
-        </ol>
-    </section>
+<template>
+  <section class="mb-20">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))] mb-6">Experience</h2>
+
+    <div class="space-y-1">
+      <div
+        v-for="(job, index) in workExperience"
+        :key="index"
+        class="group flex items-start gap-6 p-4 -mx-4 rounded-xl hover:bg-[rgb(var(--card))] transition-colors"
+      >
+        <span class="text-sm text-[rgb(var(--muted))] font-mono w-32 flex-shrink-0 pt-0.5">
+          {{ job.period }}
+        </span>
+        <div>
+          <h3 class="font-medium group-hover:text-cyan-500 transition-colors">
+            {{ job.role }}
+          </h3>
+          <p class="text-sm text-[rgb(var(--muted))]">
+            {{ job.company }} · {{ job.location }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
