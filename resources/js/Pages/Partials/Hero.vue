@@ -25,7 +25,7 @@ onMounted(() => {
         </div>
 
         <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6">
-          Christoper Patino
+          Christoper Patiño
           <span class="block text-[rgb(var(--muted))] text-3xl sm:text-4xl font-normal mt-2">Software Engineer &amp; Founder</span>
         </h1>
 
@@ -35,7 +35,7 @@ onMounted(() => {
 
         <div class="flex flex-wrap items-center gap-3">
           <a
-            href="mailto:hello@christoper.dev"
+            href="mailto:christoper.patiho@gmail.com"
             class="inline-flex items-center gap-2 px-6 py-3 bg-[rgb(var(--foreground))] text-[rgb(var(--background))] rounded-full font-medium hover:opacity-90 transition-opacity"
           >
             Get in touch
@@ -62,13 +62,8 @@ onMounted(() => {
       <div class="flex-shrink-0 sm:self-start">
         <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-[rgb(var(--border))] ring-4 ring-[rgb(var(--background))]">
           <img
-            class="w-full h-full object-cover object-top hidden lg:block"
-            src="/assets/img/profile.jpg"
-            alt="Christoper Patino"
-          />
-          <img
-            class="w-full h-full object-cover object-top lg:hidden"
-            src="/assets/img/profile-mobile.jpeg"
+            class="w-full h-full object-cover object-top"
+            src="/assets/img/profile.jpeg"
             alt="Christoper Patino"
           />
         </div>
