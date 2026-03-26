@@ -20,7 +20,7 @@ onMounted(() => {
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[rgb(var(--background))]/80 border-b border-[rgb(var(--border))]">
     <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <span class="font-semibold tracking-tight">christoper.dev</span>
+      <span class="font-semibold tracking-tight">Christo Santos</span>
 
       <div class="flex items-center gap-4">
         <!-- X / Twitter -->
