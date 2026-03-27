@@ -22,7 +22,7 @@ const workExperience = [
     period: '2020 - Present',
     role: 'Principal Engineer',
     company: 'Freelancer',
-    location: 'Ver, México'
+    location: 'México - USA'
   },
 ];
 </script>
