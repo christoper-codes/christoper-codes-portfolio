@@ -19,10 +19,10 @@ const workExperience = [
     location: 'Veracruz, Mexico'
   },
     {
-    period: '2022 - Present',
+    period: '2020 - Present',
     role: 'Principal Engineer',
-    company: 'Victoria S. de R.L.',
-    location: 'CDMX, Mexico'
+    company: 'Freelancer',
+    location: 'Ver, México'
   },
 ];
 </script>
