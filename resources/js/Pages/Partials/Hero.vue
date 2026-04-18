@@ -60,7 +60,7 @@ onMounted(() => {
 
       <!-- Profile photo -->
       <div class="flex-shrink-0 sm:self-start">
-        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-[rgb(var(--border))] ring-4 ring-[rgb(var(--background))]">
+        <div class="w-32 h-32 sm:w-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-[rgb(var(--border))] ring-4 ring-[rgb(var(--background))]">
           <img
             class="w-full h-full object-cover object-center"
             src="/assets/img/newdarkprofile.jpg"
