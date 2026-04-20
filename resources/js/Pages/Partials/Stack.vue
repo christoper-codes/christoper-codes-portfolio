@@ -20,7 +20,7 @@ const skillGroups = [
   },
   {
     label: 'DevOps & Cloud',
-    items: ['Git', 'GitHub', 'DigitalOcean', 'AWS', 'Vercel', 'Forge', 'Laravel Cloud']
+    items: ['Git', 'GitHub', 'GitHub Actions', 'DigitalOcean', 'AWS', 'Vercel', 'Forge', 'Laravel Cloud']
   },
 ];
 </script>
