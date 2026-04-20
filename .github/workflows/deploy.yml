@@ -40,7 +40,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: 'public/build'
-          target: '/home/forge/christosantos.com/current'
+          target: '/home/forge/christosantos.com/build_staging'
           strip_components: 0
 
       - name: Trigger Forge deploy
